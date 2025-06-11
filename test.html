@@ -15,7 +15,7 @@ body {
 }
 
 form {
-    background-color: #F8F8F8;
+    background-color: #1808a7;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #6ca0dc;
+    border-color: #2788f7;
     outline: none;
 }
 
@@ -62,7 +62,7 @@ textarea {
 
 input[type="submit"] {
     background-color: #00796B; /* Deep teal */
-    color: white;
+    color: rgb(201, 245, 4);
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -73,7 +73,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #004d40;
+    background-color: #23b199;
 }
 
   </style>
@@ -82,16 +82,16 @@ input[type="submit"]:hover {
 
   <form id="contactForm" action="test.php" method="post" onsubmit="return validateForm()">
     <h2>WEB FORM</h2>
-    <label for="name">NAME:</label>
+    <label for="name">enter your name:</label>
     <input type="text" id="name" name="name" required>
 
-    <label for="email">EMAIL:</label>
+    <label for="email">enter you Email:</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="message">MESSAGE:</label>
+    <label for="message">Message............</label>
     <textarea id="message" name="message" rows="4" required></textarea>
 
-    <button type="submit">SUBMIT</button>
+    <button type="submit">ok</button
   </form>
 
   <script>
