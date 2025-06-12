@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #2eca62, #DE3163); /* Soft gradient background */
+    background: linear-gradient(135deg, #DE3163, #DE3163); /* Soft gradient background */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 }
 
 form {
-    background-color: #16c510;
+    background-color: #F8F8F8;
     padding: 40px;
     border-radius: 15px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
@@ -51,7 +51,7 @@ textarea {
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #2788f7;
+    border-color: #6ca0dc;
     outline: none;
 }
 
@@ -62,7 +62,7 @@ textarea {
 
 input[type="submit"] {
     background-color: #00796B; /* Deep teal */
-    color: rgb(201, 245, 4);
+    color: white;
     padding: 12px;
     border: none;
     border-radius: 8px;
@@ -73,7 +73,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #23b199;
+    background-color: #004d40;
 }
 
   </style>
@@ -82,18 +82,16 @@ input[type="submit"]:hover {
 
   <form id="contactForm" action="test.php" method="post" onsubmit="return validateForm()">
     <h2>WEB FORM</h2>
-
-    <label for="name">ENTER YOUR NAME:</label>
+    <label for="name">enter your name:</label>
     <input type="text" id="name" name="name" required>
 
-    <label for="email">EMAIL:</label>
+    <label for="email">enter you Email:</label>
     <input type="email" id="email" name="email" required>
 
-    <label for="message">MESSAGE:</label>
-
+    <label for="message">Message............</label>
     <textarea id="message" name="message" rows="4" required></textarea>
 
-    <button type="submit">OK</button>
+    <button type="submit">Submit</button>
   </form>
 
   <script>
